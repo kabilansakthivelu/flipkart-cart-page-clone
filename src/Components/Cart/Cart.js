@@ -67,7 +67,7 @@ const Cart = () => {
                 <p className="productSize">{product.size}</p>
                 </div> */}
 
-                <div className="cartTotalModifier">
+                <div className="cartTotalModifierInCartPage">
                 <AiOutlineMinus className="operator" onClick={()=>{cartDecrease(product.id)}}/>
                 {product.cartTotal}
                 <AiOutlinePlus className="operator" onClick={()=>{cartIncrease(product.id)}}/>

@@ -13,3 +13,6 @@
 .saveForLaterLink{
     @apply text-blue-600 my-2 mx-auto
 }
+.cartTotalModifierInCartPage{
+    @apply flex items-center text-lg my-3
+}
