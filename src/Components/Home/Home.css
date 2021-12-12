@@ -1,0 +1,54 @@
+.productsSection{
+    @apply bg-white h-screen ml-96 mr-28 p-4 mt-14 fixed w-9/12
+}
+.pageDescription{
+    @apply flex flex-row items-center
+}
+.pageDescriptionTitle{
+    @apply font-semibold
+}
+.pageDescriptionSubTitle{
+    @apply text-sm text-gray-500 pl-4
+}
+.productCards{
+    @apply flex flex-row flex-wrap mt-5
+}
+.productImage{
+    @apply w-56 h-56 
+}
+.singleProduct{
+    @apply cursor-pointer mx-3
+}
+.productTitle{
+    @apply text-gray-500 font-semibold mt-2
+}
+.productDescription{
+    @apply text-sm
+}
+.newPrice{
+    @apply flex flex-row items-center font-semibold mr-2
+}
+.oldPrice{
+    @apply flex flex-row items-center text-gray-500 text-sm line-through mr-2
+}
+.discount{
+    @apply text-green-500 font-semibold text-sm
+}
+.productSizeText{
+    @apply text-gray-500 text-sm font-semibold mr-2
+}
+.sizeSection, .priceSection{
+    @apply flex flex-row items-center my-1
+}
+.productSize{
+    @apply text-sm
+}
+.cartBtnDiv{
+    @apply border-2 rounded-lg py-1 text-center bg-blue-500 text-white
+}
+.cartTotalModifier{
+    @apply flex items-center my-3
+}
+.operator{
+    @apply mx-2 border-2 m-1 rounded-md
+}

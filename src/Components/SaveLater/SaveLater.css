@@ -1,0 +1,6 @@
+.saveForLaterSection{
+    @apply mt-10 pl-4
+}
+.saveForLater{
+    @apply font-bold text-lg mt-10
+}

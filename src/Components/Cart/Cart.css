@@ -1,0 +1,15 @@
+.deleteOperator{
+    @apply ml-4 text-red-600
+}
+.cartPageDescription{
+    @apply float-right text-center text-lg mt-10 mr-10 space-y-2 font-bold border-2 p-4
+}
+.cartPagePlaceHolder{
+    @apply text-center text-lg mt-10 font-bold
+}
+.cartSubDescription{
+    @apply flex items-center justify-center
+}
+.saveForLaterLink{
+    @apply text-blue-600 my-2 mx-auto
+}
