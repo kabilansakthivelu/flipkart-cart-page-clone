@@ -6,7 +6,7 @@ import './SaveLater.css';
 
 const SaveLater = () => {
 
-    const {products, addToCart, addToCartFromSaveLaterSection} = useContext(ValuesContext);
+    const {products, addToCart, addToCartFromSaveLaterSection, removeFromSavedList} = useContext(ValuesContext);
 
     const savedForLaterItems = products.filter((product)=>{
         return product.savedForLater === "true";
@@ -42,6 +42,8 @@ const SaveLater = () => {
                 <div className="cartBtnDiv" onClick={()=>{addToCartFromSaveLaterSection(product.id)}}>
                 <button className="cartBtn">Add to Cart</button>
                 </div> 
+
+                <button className="saveForLaterLink" onClick={()=>{removeFromSavedList(product.id)}}>Remove from saved list</button>
 
                 </div>
             )

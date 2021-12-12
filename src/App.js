@@ -65,9 +65,17 @@ function App() {
         setProducts([...new Set([...products, modification])])
     }
 
+    const removeFromSavedList = (id) =>{
+      const modification = products.find((product)=>{
+          return product.id === id;
+        })
+        modification.savedForLater = "false";
+        setProducts([...new Set([...products, modification])])
+    }
+
   return (
     <Router>
-    <ValuesContext.Provider value={{products, addToCart, cartIncrease, cartDecrease, itemsInCart, deleteItemFromCart, saveForLater, addToCartFromSaveLaterSection}}>
+    <ValuesContext.Provider value={{products, addToCart, cartIncrease, cartDecrease, itemsInCart, deleteItemFromCart, saveForLater, addToCartFromSaveLaterSection, removeFromSavedList}}>
     <Header />
       <Routes>
         <Route exact path="/" element={<Home />}/>
